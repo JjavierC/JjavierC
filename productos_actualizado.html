@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts (1).js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos_actualizado.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Figuras de Charmander -->
+        <section id="figuras-charmander">
+            <h2>Figuras de Charmander</h2>
+            <div class="productos-contenedor">
+                <div class="producto">
+                    <img src="VeniceAI_LH1uMrF.png" alt="Charmander Clásico">
+                    <h3>Figura de Charmander Clásico</h3>
+                    <p>$30,000 COP</p>
+                    <button onclick="addToCart('Figura de Charmander Clásico', 30000, )">
+                        Añadir al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="VeniceAI_d13Rq9I.png" alt="Charmander en Llamas">
+                    <h3>Charmander en Llamas</h3>
+                    <p>$50,000 COP</p>
+                    <button onclick="addToCart('Charmander en Llamas', 50000,'VeniceAI_d13Rq9I.png ')">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos de Pikachu -->
+        <section id="productos-pikachu">
+            <h2>Productos de Pikachu</h2>
+            <div class="productos-contenedor">
+                <div class="producto">
+                    <img src="VeniceAI_EghDyff.png" alt="Peluche Pikachu Clásico">
+                    <h3>Peluche de Pikachu Clásico</h3>
+                    <p>$20,000 COP</p>
+                    <button onclick="addToCart('Peluche de Pikachu Clásico', 20000,'VeniceAI_EghDyff.png')">
+                        Añadir al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="VeniceAI_uHQ4wuk.png" alt="Figura Pikachu Detective">
+                    <h3>Figura Pikachu Detective</h3>
+                    <p>$40,000 COP</p>
+                    <button onclick="addToCart('Figura Pikachu Detective', 40000,'VeniceAI_uHQ4wuk.png' )">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peluches de Bulbasaur -->
+        <section id="peluches-bulbasaur">
+            <h2>Peluches de Bulbasaur</h2>
+            <div class="productos-contenedor">
+                <div class="producto">
+                    <img src="VeniceAI_ow7KmIw.png" alt="Peluche Bulbasaur Clásico">
+                    <h3>Peluche de Bulbasaur Clásico</h3>
+                    <p>$25,000 COP</p>
+                    <button onclick="addToCart('Peluche de Bulbasaur Clásico', 25000,'VeniceAI_ow7KmIw.png' )">
+                        Añadir al carrito
+                    </button>
+                </div>
+                <div class="producto">
+                    <img src="VeniceAI_xoBNc80.png" alt="Bulbasaur Evolución">
+                    <h3>Bulbasaur Evolución</h3>
+                    <p>$35,000 COP</p>
+                    <button onclick="addToCart('Bulbasaur Evolución', 35000, 'VeniceAI_xoBNc80.png')">
+                        Añadir al carrito
+
+                    </button>
+
+ 
+
+        </section>
+        <section id="productos-varios">
+            <h2>Productos Varios</h2>
+            <div class="productos-contenedor">
+ 
+        
+                <!-- Producto: pokeball -->
+                <div class="producto">
+                    <img src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Free-Image.png" alt="Pokeball">
+                    <h3>Pokeball</h3>
+                    <p>$5,000 COP</p>
+                    <button onclick="addToCart('pokeball', 5000, 'https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Free-Image.png')">
+                        Añadir al carrito
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Carrito -->
+        <div class="cart-icon-container" onclick="toggleCart()">
+            <img src="https://i.pinimg.com/originals/e8/cc/47/e8cc477152201b9d326cfe6f2fc1932e.jpg" alt="Carrito Pokémon" class="cart-icon">
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+
+        <div class="cart" id="cart">
+            <div class="cart-header">
+                <h3>Carrito</h3>
+            </div>
+            <div class="cart-items"></div>
+            <p>Total: $<span id="cart-total">0</span> COP</p>
+            <button onclick="clearCart()">Vaciar Carrito</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <footer>
+            <div class="footer-secciones">
+                <div class="footer-links">
+
+
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/wiltonnnc/" target="_blank"><img src="https://www.unirio.br/cla/ivl/youtube.png/image" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/wiltonnnc/" target="_blank"><img src="https://t4.ftcdn.net/jpg/05/32/20/03/360_F_532200355_odKN9Ou3WB6iHWJTFIElFtJbTuzJspY6.jpg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/wiltonnnc/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/wiltonnnc/" target="_blank"><img src="https://www.logo.wine/a/logo/TikTok/TikTok-Icon-Logo.wine.svg" alt="TikTok"></a>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <ul>
+                    <li><a href="#">Términos del servicio</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+        <p>NO ME DEMANDES POKEMON, HECHO POR WILTON CARVAJAL.</p>
+    </footer>
+</body>
+</html> 
